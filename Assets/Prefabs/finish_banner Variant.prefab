@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!136 &1071055121
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3201240116385595338}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.15817142
+  m_Height: 0.43980122
+  m_Direction: 1
+  m_Center: {x: 0, y: 5.938675, z: -6.736574}
+--- !u!136 &1071055123
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3555106341261031159}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.15817133
+  m_Height: 0.43980122
+  m_Direction: 1
+  m_Center: {x: 0, y: 5.938676, z: -0.0000009685755}
 --- !u!65 &1432708667
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8,7 +36,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3714111909192429532}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.3, y: 5.94, z: 6.61}
@@ -315,20 +343,6 @@ CapsuleCollider:
   m_Height: 6.271775
   m_Direction: 1
   m_Center: {x: 0, y: 2.9999998, z: -0.00000048801303}
---- !u!136 &1071055123
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3555106341261031159}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.15817133
-  m_Height: 0.43980122
-  m_Direction: 1
-  m_Center: {x: 0, y: 5.938676, z: -0.0000009685755}
 --- !u!136 &1071055122
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -343,20 +357,6 @@ CapsuleCollider:
   m_Height: 6.271775
   m_Direction: 1
   m_Center: {x: 0, y: 2.9999988, z: -6.7365737}
---- !u!136 &1071055121
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3201240116385595338}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.15817142
-  m_Height: 0.43980122
-  m_Direction: 1
-  m_Center: {x: 0, y: 5.938675, z: -6.736574}
 --- !u!1001 &4560533213742322317
 PrefabInstance:
   m_ObjectHideFlags: 0
