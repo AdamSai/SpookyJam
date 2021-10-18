@@ -39,8 +39,8 @@ public class BatController : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, huntingRadius);
+        Gizmos.color = new Color(255, 0, 0, 0.2f);
+        Gizmos.DrawWireSphere(transform.position, huntingRadius * transform.localScale.x);
     }
 
 
