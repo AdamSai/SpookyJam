@@ -218,8 +218,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58dee182178b8ce41af3f8721d57bede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flyingSpeed: 5
-  flockingRadius: 5
+  flyingSpeed: 30
+  flockingRadius: 40
   huntingRadius: 40
   huntingChaseSpeedModifier: 2
 --- !u!135 &381616046
@@ -407,8 +407,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58dee182178b8ce41af3f8721d57bede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flyingSpeed: 5
-  flockingRadius: 5
+  flyingSpeed: 30
+  flockingRadius: 40
   huntingRadius: 40
   huntingChaseSpeedModifier: 2
 --- !u!135 &407279163
@@ -519,8 +519,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58dee182178b8ce41af3f8721d57bede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flyingSpeed: 5
-  flockingRadius: 5
+  flyingSpeed: 30
+  flockingRadius: 40
   huntingRadius: 40
   huntingChaseSpeedModifier: 2
 --- !u!135 &627552695
@@ -743,8 +743,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58dee182178b8ce41af3f8721d57bede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flyingSpeed: 5
-  flockingRadius: 5
+  flyingSpeed: 30
+  flockingRadius: 40
   huntingRadius: 40
   huntingChaseSpeedModifier: 2
 --- !u!135 &746445873
@@ -990,8 +990,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58dee182178b8ce41af3f8721d57bede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flyingSpeed: 5
-  flockingRadius: 5
+  flyingSpeed: 30
+  flockingRadius: 40
   huntingRadius: 40
   huntingChaseSpeedModifier: 2
 --- !u!135 &1019488946
@@ -1121,8 +1121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58dee182178b8ce41af3f8721d57bede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flyingSpeed: 5
-  flockingRadius: 5
+  flyingSpeed: 30
+  flockingRadius: 40
   huntingRadius: 40
   huntingChaseSpeedModifier: 2
 --- !u!135 &1318030912
@@ -1252,8 +1252,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58dee182178b8ce41af3f8721d57bede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flyingSpeed: 5
-  flockingRadius: 5
+  flyingSpeed: 30
+  flockingRadius: 40
   huntingRadius: 40
   huntingChaseSpeedModifier: 2
 --- !u!135 &1329746970
@@ -1383,8 +1383,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58dee182178b8ce41af3f8721d57bede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flyingSpeed: 5
-  flockingRadius: 5
+  flyingSpeed: 30
+  flockingRadius: 40
   huntingRadius: 40
   huntingChaseSpeedModifier: 2
 --- !u!135 &1472640177
@@ -1610,8 +1610,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58dee182178b8ce41af3f8721d57bede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flyingSpeed: 5
-  flockingRadius: 5
+  flyingSpeed: 30
+  flockingRadius: 40
   huntingRadius: 40
   huntingChaseSpeedModifier: 2
 --- !u!135 &1918507298

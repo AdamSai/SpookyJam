@@ -28,7 +28,6 @@ public class BatController : MonoBehaviour
             if(!isChasing)
             {
                 nextPoint = Random.insideUnitSphere * flockingRadius;
-                transform.LookAt(nextPoint, Vector3.up);
             }
             else
                 Destroy(gameObject);
@@ -37,6 +36,8 @@ public class BatController : MonoBehaviour
         {
             var dir = (nextPoint - transform.position).normalized;
             transform.position += flyingSpeed * dir * Time.deltaTime;
+            transform.LookAt(nextPoint, Vector3.up);
+
         }
     }
 
