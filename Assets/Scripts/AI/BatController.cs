@@ -26,7 +26,9 @@ public class BatController : MonoBehaviour
         if(Vector3.Distance(nextPoint, transform.position) < 0.5f)
         {
             if(!isChasing)
+            {
                 nextPoint = Random.insideUnitSphere * flockingRadius;
+            }
             else
                 Destroy(gameObject);
         }
@@ -34,6 +36,8 @@ public class BatController : MonoBehaviour
         {
             var dir = (nextPoint - transform.position).normalized;
             transform.position += flyingSpeed * dir * Time.deltaTime;
+            transform.LookAt(nextPoint, Vector3.up);
+
         }
     }
 
@@ -48,7 +52,6 @@ public class BatController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Triggered by Player");
             isChasing = true;
             nextPoint = other.transform.position;
             flyingSpeed *= huntingChaseSpeedModifier;
