@@ -1,0 +1,3 @@
+[submodule "spooky-fmod"]
+	path = spooky-fmod
+	url = https://github.com/MrAbnox/SpookyJamFmod
