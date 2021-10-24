@@ -15,6 +15,6 @@ public class GameUIController : MonoBehaviour
 
     void RedrawScore()
     {
-        scoreText.text = "Score: " + GameManager.score.ToString();
+        scoreText.text = "Score: " + GameManager.instance.score.ToString();
     }
 }
