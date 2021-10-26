@@ -21,10 +21,7 @@ public class GameManager : MonoBehaviour
             Destroy(this);
             Debug.LogWarning("One too many GameManagers in the scene");
         }
-    }
 
-    private void Start()
-    {
         inputController = GetComponent<InputController>();
     }
 
