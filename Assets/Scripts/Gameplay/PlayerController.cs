@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float forwardSpeed;
-    [SerializeField] private float tiltSpeed;
+    [SerializeField] private float turnSpeed;
     [SerializeField] private float impulseForce;
     [SerializeField] private float forwardDrag;
     [SerializeField] private float gravityIncrease;
@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     private InputController input;
     private Rigidbody rigidBody;
     private float fall;
+    private float currentTilt;
 
     // Start is called before the first frame update
     void Start()
@@ -46,14 +47,18 @@ public class PlayerController : MonoBehaviour
             tempGravity = tempGravity * gravityIncrease;
         }
 
-        if(vertical > 0)
+        Vector3 direction = new Vector3(0.0f, 0.0f, 0.0f);
+
+        if(horizontal > 0)
         {
-            //TODO: Go right
+            direction = -Vector3.right;
         }
-        else if(vertical < 0)
+        else if(horizontal < 0)
         {
-            //TODO: Go Left
+            direction = Vector3.right;
         }
+
+        rigidBody.AddForce(direction * Time.deltaTime * turnSpeed);
 
         //Forward Drag
         //TODO: Maybe use forwdrag (below) to calculate right plane if horizontal movement moves player to any of the sides
@@ -63,10 +68,15 @@ public class PlayerController : MonoBehaviour
         //NOTES: Keep in mind rigidbody needs to have UseGravity = false
         rigidBody.AddForce(tempGravity * (rigidBody.mass * rigidBody.mass));
 
+        //OLD TILT, KEEP THIS FOR REFERENCE
+        //===================================================================================================
+        //currentTilt = Mathf.MoveTowards(currentTilt, horizontal * horizontal, Time.deltaTime * tiltSpeed);
+        //transform.localRotation = Quaternion.Euler(0, 0, -currentTilt);
+
         //OLD MOVEMENT, KEEP THIS FOR REFERENCE
         //====================================================================================================================================================
         //float roll = input.moveDirection.x;
-        ////float tilt = input.moveDirection.y;
+        ////float tilt = input.moveDirection.y/*;*/
 
         ////TODO: TEST THIS
         //float yaw = input.moveDirection.x / 8;
